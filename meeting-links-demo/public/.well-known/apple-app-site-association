@@ -1,0 +1,48 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appID": "F9LMZT6P86.io.cobrowse.demo-acj",
+                "components": [
+                    {
+                        "/": "/api/*"
+                    },
+                    {
+                        "/": "/license/*"
+                    },
+                    {
+                        "/": "/data/*"
+                    },
+                    {
+                        "/": "/code/*"
+                    },
+                    {
+                        "/": "/demo/*"
+                    },
+                    {
+                        "/": "",
+                        "#": "?*"
+                    },
+                    {
+                        "/": "/s/*",
+                        "?": {
+                            "id": "?*"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "F9LMZT6P86.io.cobrowse.demo-acj",
+            "GAY49KQFRH.io.cobrowse.demo-acj"
+        ]
+    },
+    "appclips": {
+        "apps": [
+            "F9LMZT6P86.io.cobrowse.demo-acj",
+            "GAY49KQFRH.io.cobrowse.demo-acj.app-clip"
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+.browser {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+}
+
+.browser > nav {
+    display: flex;
+
+    background: #f9fafb;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.url {
+    flex: 1;
+
+    border: none;
+    padding: 0.625rem;
+}
+
+.inactive {
+    opacity: 0.5;
+}
+
+.active {
+    opacity: 1.0;
+}
+
+.browser > iframe {
+    flex: 1;
+    border: 0;
+}
+
+.browser > figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.browser > figure > figcaption {
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}

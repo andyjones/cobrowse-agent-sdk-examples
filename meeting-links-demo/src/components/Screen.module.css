@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    text-align: center;
+    margin: 0.83em 0;
+}
+
+.screen {
+    flex: 1;
+
+    background: #ffffff;
+
+    border-width: var(--frame-border-width);
+    border-color: var(--frame-border-color);
+    border-style: var(--frame-border-style);
+    border-radius: var(--frame-border-radius);
+}
