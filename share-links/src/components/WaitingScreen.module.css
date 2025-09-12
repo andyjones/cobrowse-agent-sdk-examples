@@ -1,0 +1,12 @@
+.waitingScreen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	gap: 4px;
+}
+
+.waitingText {
+	font-weight: 500;
+}
