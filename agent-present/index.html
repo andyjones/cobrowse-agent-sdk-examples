@@ -21,7 +21,7 @@
 
         const createPresentSession = async () => {
             // Create a new session with full device in requesting state
-            session = await cobrowse.sessions.create({ full_device: 'requested' })
+            session = await cobrowse.sessions.create({ full_device: 'requested', agent: 'me' })
 
             const viewerToken = await generateViewerJWT(licenseKey, session.id)
 
@@ -107,10 +107,13 @@
             // Generate a viewer JWT token scoped to a single session
             const jwt = await new jose.SignJWT({
                 displayName: "Viewer",
+                role: null,
                 policy: {
                     version: 2,
                     sessions: {
-                        id: id
+                        id: id,
+                        // a further check can be added by filtering by agent id
+                        // agent: jose.decodeJwt(agentToken).payload.id
                     }
                 }
             })
