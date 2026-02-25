@@ -1,0 +1,115 @@
+/* Simple reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-family: Stolzl, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* colors */
+	--purple: #6556f0;
+
+	--bg-color: #efeffd;
+	--color-text: #213547;
+	--color-heading: oklch(13% 0.028 261.692);
+
+	/* defaults */
+	--border-radius: 0.375rem;
+
+	/* components */
+	--button-border-radius: var(--border-radius);
+
+	--nav-border-radius: var(--border-radius);
+
+	--frame-border-color: var(--purple);
+	--frame-border-style: solid;
+	--frame-border-width: 4px;
+	--frame-border-radius: var(--border-radius);
+
+	color-scheme: light dark;
+	color: var(--color-text);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+
+	background-color: var(--bg-color);
+	background-image: radial-gradient(#e0e0e0 1px, var(--bg-color) 1px);
+	background-size: 16px 16px;
+}
+
+#root {
+	height: 100%;
+	width: 100%;
+	max-width: 1280px;
+
+	display: flex;
+	flex-direction: column;
+
+	margin: 0 auto;
+	padding: 1rem 2rem;
+	gap: 1rem;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: 2em;
+	color: var(--color-heading);
+	font-weight: 500;
+	letter-spacing: -0.025em;
+	line-height: 2;
+}
+
+button {
+	border-radius: var(--button-border-radius);
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: #f9f9f9;
+	cursor: pointer;
+	transition: background 0.25s;
+}
+button:hover {
+	background-color: #ededf7; /*eff2f5;*/
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+	display: block;
+	font-size: 16px;
+	height: 40px;
+	outline: none;
+	padding: 0 10px;
+	border-radius: var(--button-border-radius);
+	width: 100%;
+}
+input:focus {
+	outline: 1px auto -webkit-focus-ring-color;
+}
+
+.font-mono {
+	font-family:
+		ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+		monospace;
+}

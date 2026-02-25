@@ -1,0 +1,35 @@
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	background: #ffffff;
+	border-width: var(--frame-border-width);
+	border-color: var(--frame-border-color);
+	border-style: var(--frame-border-style);
+	border-radius: var(--frame-border-radius);
+	padding: 1rem;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+header > fieldset {
+	display: flex;
+	flex: 1;
+	border: none;
+	justify-content: end;
+}
+
+fieldset > input {
+	text-align: right;
+	font-size: 0.75rem;
+	line-height: 1.75rem;
+	color: oklch(55.4% 0.046 257.417);
+	background: none;
+	border: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
